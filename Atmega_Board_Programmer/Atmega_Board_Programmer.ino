@@ -415,7 +415,7 @@ void writeBootloader ()
       bootloader = ATmegaBOOT_168_atmega328_pro_8MHz_hex;
       newlFuse = 0xE2;  // internal 8 MHz oscillator
       newhFuse = 0xDA;  //  2048 byte bootloader, SPI enabled
-      newextFuse = 0x07; // disable BOD
+      newextFuse = 0xFF; // disable BOD
       addr = 0x7800;
       len = sizeof ATmegaBOOT_168_atmega328_pro_8MHz_hex;
       }  // end of using the 8 MHz clock
